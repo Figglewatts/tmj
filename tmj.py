@@ -41,7 +41,7 @@ def welcome_msg():
 def main():
     colorama.init()
 
-    exercises = map(lambda name: Exercise(name, 1, 0.1, 0.1),
+    exercises = map(lambda name: Exercise(name, 10, 10),
                     ["Push up", "Pull down", "Push left", "Push right"])
     exercise_funcs = [
         func for exercise in exercises for func in exercise.exec_buf()
