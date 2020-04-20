@@ -23,4 +23,4 @@ jobs:
         pipenv sync --dev
     - name: Lint with pylint
       run: |
-        pipenv run pylint pytestgen --disable="C,W,R"
+        pipenv run pylint tmj --disable="C,W,R"
